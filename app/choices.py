@@ -47,3 +47,18 @@ JORNADA = [
     (T,'Tarde'),
     (C,'Continua')
 ]
+
+# periodos
+
+P1 = 'P1'
+P2 = 'P2'
+P3 = 'P3'
+P4 = 'P4'
+
+PERIODO = [
+    (P1, 'Primer periodo'),
+    (P2, 'Segundo periodo'),
+    (P3, 'Tercer periodo'),
+    (P4, 'Cuarto periodo'),
+]
+

@@ -102,11 +102,11 @@ class Asignatura(models.Model):
 class ModeloNotas(models.Model):
     estudiante = models.ForeignKey(Estudiante, on_delete=models.CASCADE)
     curso = models.ManyToManyField(Curso)
-    nota1 = models.DecimalField()
-    nota2 = models.DecimalField()
-    nota3 = models.DecimalField()
-    nota4 = models.DecimalField()
-    nota5 = models.DecimalField()
+    nota1 = models.DecimalField(max_digits=3, decimal_places=2)
+    nota2 = models.DecimalField(max_digits=3, decimal_places=2)
+    nota3 = models.DecimalField(max_digits=3, decimal_places=2)
+    nota4 = models.DecimalField(max_digits=3, decimal_places=2)
+    nota5 = models.DecimalField(max_digits=3, decimal_places=2)
 
     class Meta:
         abstract = True

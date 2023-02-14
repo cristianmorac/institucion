@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Institucion,Estudiante,Profesor
+from .models import Institucion,Estudiante,Profesor,Curso,Periodo,Asignatura
 
 # Register your models here.
 
@@ -17,4 +17,8 @@ class NivelAdmin(admin.ModelAdmin):
 
 admin.site.register(Estudiante)
 admin.site.register(Profesor)
+admin.site.register(Curso)
+admin.site.register(Periodo)
+admin.site.register(Asignatura)
+
 
